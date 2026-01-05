@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { EXPERT_DATA, HERO_IMAGES } from '../constants';
+import { EXPERT_DATA, HERO_IMAGES } from '../constants.ts';
 
 const Hero: React.FC = () => {
   return (

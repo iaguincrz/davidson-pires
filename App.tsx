@@ -1,15 +1,15 @@
 
 import React, { useState } from 'react';
-import Hero from './components/Hero';
-import About from './components/About';
-import ResultsGallery from './components/ResultsGallery';
-import TrustFeatures from './components/TrustFeatures';
-import CTASection from './components/CTASection';
-import Process from './components/Process';
-import BehindScenes from './components/BehindScenes';
-import Footer from './components/Footer';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
-import Lightbox from './components/Lightbox';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import ResultsGallery from './components/ResultsGallery.tsx';
+import TrustFeatures from './components/TrustFeatures.tsx';
+import CTASection from './components/CTASection.tsx';
+import Process from './components/Process.tsx';
+import BehindScenes from './components/BehindScenes.tsx';
+import Footer from './components/Footer.tsx';
+import FloatingWhatsApp from './components/FloatingWhatsApp.tsx';
+import Lightbox from './components/Lightbox.tsx';
 
 const App: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -30,8 +30,8 @@ const App: React.FC = () => {
       <Process />
       <BehindScenes onImageClick={openLightbox} />
       <CTASection 
-        title="Você está a apenas um 'Olá' de transformar o seu sorriso."
-        subtitle="Agende sua avaliação gratuita hoje. Restam poucas vagas para encerrarmos a agenda desta semana."
+        title="Você está a apenas um 'Olá' de transformar o seu sorriso para sempre."
+        subtitle="Restam poucas vagas para avaliações gratuitas esta semana."
         isFinal
       />
       <Footer />
